@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Modelo de caja sirve para que el padding y el borde no afecten el tamaño del elemento o los elementos que lo redean */
 }
 
 /* 🎨 Estilos generales para el cuerpo de la página */
@@ -58,7 +58,7 @@ h2 {
 
 /* 📜 Estilos generales para párrafos */
 p {
-    font-size: 18px;
+    font-size: 18px; /* Tamaño de la letrar */
     margin-bottom: 15px;
 }
 
@@ -79,9 +79,18 @@ ul li {
 /* 🖼 Estilos para imágenes */
 img {
     width: 200px;
-    height: auto;
+    height: auto; /* Altura automatica */
     border-radius: 10px; /* Bordes redondeados */
     margin-top: 10px;
+
+/*Alinear las imagenes por columnas*/    
+}
+.Grupo_imagenes{
+    display: grid; /* alinear por grid */
+    grid-template-columns: repeat(3,210px); /* Creo 3 columnas de 210px */
+    gap: 5px /* ES el espacion etre imagen */
+    ;
+    
 }
 
 /* 🔗 Enlaces estilo botón */
@@ -90,7 +99,7 @@ a {
     color: white; /* Texto en blanco */
     background: #4A90E2; /* Fondo azul */
     padding: 10px 20px; /* Espaciado interno */
-    display: inline-block;
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
     border-radius: 8px; /* Bordes redondeados */
     transition: background 0.3s ease-in-out; /* Transición de color */
     font-weight: bold;
