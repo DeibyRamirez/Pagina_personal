@@ -8,7 +8,7 @@
     box-sizing: border-box; /* Modelo de caja sirve para que el padding y el borde no afecten el tamaño del elemento o los elementos que lo redean */
 }
 
-/* 🎨 Estilos generales para el cuerpo de la página */
+/* 🎨 Estos son los estilos generales para el cuerpo de la página */
 body {
     font-family: 'Poppins', sans-serif; /* Fuente moderna */
     background-color: #f4f4f4; /* Fondo gris claro */
@@ -88,7 +88,7 @@ img {
 .Grupo_imagenes{
     display: grid; /* alinear por grid */
     grid-template-columns: repeat(3,210px); /* Creo 3 columnas de 210px */
-    gap: 5px /* ES el espacion etre imagen */
+    gap: 5px /* Es el espacio entre imagenes */
     ;
     
 }
@@ -105,23 +105,3 @@ a {
     font-weight: bold;
 }
 
-/* 🔥 Efecto hover para los enlaces */
-a:hover {
-    background: #1C3E80; /* Cambio de color al pasar el mouse */
-}
-
-/* ✨ Efecto hover en los títulos */
-h2:hover {
-    color: #1C3E80;
-}
-
-
-/*📌 Resumen de los Comentarios:
- 📌 Explica el propósito de cada sección.
- 🎨 Estilos generales de la página.
- 🏆 Diseño del encabezado.
- 🔳 Tarjetas de contenido.
- 🔹 Listas y textos.
- 🖼 Imágenes y su alineación.
- 🔗 Enlaces con estilo de botón.
- 🔥 Efectos hover para mejorar la interactividad.
