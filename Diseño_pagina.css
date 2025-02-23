@@ -8,6 +8,21 @@
     box-sizing: border-box; /* Modelo de caja sirve para que el padding y el borde no afecten el tamaño del elemento o los elementos que lo redean */
 }
 
+nav {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro del ul */
+    gap: 5px;
+    align-items: center;
+}
+
 /* 🎨 Estos son los estilos generales para el cuerpo de la página */
 body {
     font-family: 'Poppins', sans-serif; /* Fuente moderna */
@@ -82,23 +97,60 @@ img {
     height: auto; /* Altura automatica */
     border-radius: 10px; /* Bordes redondeados */
     margin-top: 10px;
-
-/*Alinear las imagenes por columnas*/    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    
 }
+
+img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+}
+
 video {
     border-radius: 10px; /* Bordes redondeados */
 }
 
+.juego {
+    color: white;
+    font-size: 20px;
+    background-color: #4A90E2;
+    border-radius: 10px;
+    max-width: 210px;
+    font-style: italic;
+}
+
+ .Videojuegos img {
+    width: 200px;
+    height: 300px; /* Altura fija */
+    border-radius: 10px; /* Bordes redondeados */
+    align-items: center;
+    
+}
+
 .Videojuegos {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 250px);
     gap: 5px; /* Agregar el punto y coma */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out; /* Transición para la animación */
 }
+
+.juego:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+}
+
 .Grupo_imagenes{
     display: grid; /* alinear por grid */
-    grid-template-columns: repeat(3,210px); /* Creo 3 columnas de 210px */
-    gap: 5px /* Es el espacio entre imagenes */
+    grid-template-columns: repeat(2,240px); /* Creo 3 columnas de 210px */
+    gap: 10px /* Es el espacio entre imagenes */
     ;
+    padding: 20px;
+    margin: 10px;
+    background:  white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -113,4 +165,29 @@ a {
     transition: background 0.3s ease-in-out; /* Transición de color */
     font-weight: bold;
 }
+footer {
+    background-color: white ;
+    border-radius:  10px;
+    font-size: 18px;
+    padding: 10px;
+    
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto elevado */
+}
 
+a:hover {
+    background-color: black;
+    color: gainsboro;
+
+}
+
+li:hover {
+    background-color: black;
+    color: gainsboro;
+
+}
+
+.juego:hover {
+    background-color: black;
+    color: gainsboro;
+}
