@@ -85,6 +85,15 @@ img {
 
 /*Alinear las imagenes por columnas*/    
 }
+video {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.Videojuegos {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 5px; /* Agregar el punto y coma */
+}
 .Grupo_imagenes{
     display: grid; /* alinear por grid */
     grid-template-columns: repeat(3,210px); /* Creo 3 columnas de 210px */
