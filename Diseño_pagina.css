@@ -70,7 +70,7 @@ ul {
 
 /* 📌 Cada elemento de la lista tiene un fondo azul claro */
 ul li {
-    background: #eef5ff;
+    background: #4A90E2;
     padding: 10px;
     margin: 5px 0;
     border-radius: 10px; /* Bordes redondeados */
