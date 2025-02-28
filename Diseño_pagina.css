@@ -12,7 +12,8 @@ nav {
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: unset;
+    font-weight: bold;
 }
 
 nav ul {
@@ -21,6 +22,10 @@ nav ul {
     justify-content: center; /* Centra los elementos dentro del ul */
     gap: 5px;
     align-items: center;
+}
+
+nav a {
+    text-decoration: none; /* Quita el subrayado */
 }
 
 /* 🎨 Estos son los estilos generales para el cuerpo de la página */
@@ -158,7 +163,7 @@ video {
 a {
     text-decoration: none; /* Quita el subrayado */
     color: white; /* Texto en blanco */
-    background: #4A90E2; /* Fondo azul */
+    background: white; /* Fondo azul */
     padding: 10px 20px; /* Espaciado interno */
     display: inline-block; /* Hace que el enlace se comporte como un bloque */
     border-radius: 8px; /* Bordes redondeados */
@@ -176,18 +181,19 @@ footer {
 }
 
 a:hover {
-    background-color: black;
-    color: gainsboro;
+    background-color: #1C3E80;
+    color: black;
 
 }
 
 li:hover {
-    background-color: black;
-    color: gainsboro;
+    background-color: #1C3E80;
+    color: black;
 
 }
 
-.juego:hover {
-    background-color: black;
-    color: gainsboro;
+/* Ocultar barras laterales */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
 }
